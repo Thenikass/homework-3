@@ -57,10 +57,10 @@ body{
     top: 0;
     left: 20px;
     position: absolute;
-   }        
+}        
 
-   form {
-     width: 140%;
+form {
+    width: 85%;
     height: 36px;
     float: right;
     background-color: #444444;
@@ -68,20 +68,22 @@ body{
     margin-right: 30px;
     color: #727272;
 }
-input.searchtext {
+.searchtext {
     border: none;
     background: none;
-    background-image: url(../image/magnifying-glass\ \(1\).svg)
+    background-image: url(../image/magnifying-glass-1.svg).svg);
     position: relative;
     padding: 0px;
-    left: 0px;
     width: 223px;
     height: 36px;
-    text-indent: 30px;
 
-    
-    
 }
+
+.searchtext::before{
+    content: "";
+    background-image: url(image/magnifying-glass-1.svg);
+}
+
 .icon {
     position: relative;
     left: 60px; 
